@@ -1,0 +1,2588 @@
+2023-04-14T16:04:22.375680+0300 DEBUG download_repo START
+2023-04-14T16:04:22.375888+0300 DEBUG get_urls START
+2023-04-14T16:04:22.894603+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/flatfilecms" title="flatfilecms">
+									
+										flatfilecms
+									
+								</a>
+2023-04-14T16:04:22.894879+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/tests" title="tests">
+									
+										tests
+									
+								</a>
+2023-04-14T16:04:22.895078+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/.gitignore" title=".gitignore">.gitignore</a>
+2023-04-14T16:04:22.895241+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/.hgignore" title=".hgignore">.hgignore</a>
+2023-04-14T16:04:22.895401+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/MANIFEST.in" title="MANIFEST.in">MANIFEST.in</a>
+2023-04-14T16:04:22.895605+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/Makefile" title="Makefile">Makefile</a>
+2023-04-14T16:04:22.895893+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/README.rst" title="README.rst">README.rst</a>
+2023-04-14T16:04:22.896140+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/poetry.lock" title="poetry.lock">poetry.lock</a>
+2023-04-14T16:04:22.896383+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/pyproject.toml" title="pyproject.toml">pyproject.toml</a>
+2023-04-14T16:04:22.896584+0300 INFO link from get_urls = <a href="/radium/flatfilecms/src/branch/master/pytest.ini" title="pytest.ini">pytest.ini</a>
+2023-04-14T16:04:22.896777+0300 DEBUG get_download_urls START status = True
+2023-04-14T16:04:23.406619+0300 DEBUG get_download_urls START status = False
+2023-04-14T16:04:24.224972+0300 INFO link from doc =<a aria-label="Home" href="/">
+<img alt="Logo" aria-hidden="true" class="ui mini image" height="30" src="/assets/img/logo.svg" width="30"/>
+</a>
+2023-04-14T16:04:24.225223+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.225414+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a aria-label="Home" href="/">
+       │                │                     <img alt="Logo" aria-hidden="true" class="ui mini image" height="30" src="/assets/img/logo.svg...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a aria-label="Home" href="/">
+         <img alt="Logo" aria-hidden="true" class="ui mini image" height="30" src="/assets/img/logo.svg...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a aria-label="Home" href="/">
+              <img alt="Logo" aria-hidden="true" class="ui mini image" height="30" src="/assets/img/logo.svg...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.231189+0300 INFO link from doc =<a class="item" href="/explore/repos">Explore</a>
+2023-04-14T16:04:24.231382+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.231582+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/explore/repos">Explore</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/explore/repos">Explore</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/explore/repos">Explore</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.233562+0300 INFO link from doc =<a class="item" href="https://docs.gitea.io" rel="noopener noreferrer" target="_blank">Help</a>
+2023-04-14T16:04:24.233741+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.233891+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="https://docs.gitea.io" rel="noopener noreferrer" target="_blank">Help</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="https://docs.gitea.io" rel="noopener noreferrer" target="_blank">Help</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="https://docs.gitea.io" rel="noopener noreferrer" target="_blank">Help</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.235931+0300 INFO link from doc =<a class="item" href="/user/login?redirect_to=%2fradium%2fflatfilecms%2fsrc%2fbranch%2fmaster%2fflatfilecms" rel="nofollow">
+<svg aria-hidden="true" class="svg octicon-sign-in" height="16" viewbox="0 0 16 16" width="16"><path d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 0 1 0 1.5h-2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 0 1.5h-2.5A1.75 1.75 0 0 1 2 13.25V2.75zm6.56 4.5 1.97-1.97a.75.75 0 1 0-1.06-1.06L6.22 7.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06L8.56 8.75h5.69a.75.75 0 0 0 0-1.5H8.56z" fill-rule="evenodd"></path></svg> Sign In
+			</a>
+2023-04-14T16:04:24.236109+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.236281+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/user/login?redirect_to=%2fradium%2fflatfilecms%2fsrc%2fbranch%2fmaster%2fflatfilecms" rel="nofollow">
+       │                │                     ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/user/login?redirect_to=%2fradium%2fflatfilecms%2fsrc%2fbranch%2fmaster%2fflatfilecms" rel="nofollow">
+         ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/user/login?redirect_to=%2fradium%2fflatfilecms%2fsrc%2fbranch%2fmaster%2fflatfilecms" rel="nofollow">
+              ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.238494+0300 INFO link from doc =<a href="/radium">radium</a>
+2023-04-14T16:04:24.238630+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.238778+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium">radium</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium">radium</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium">radium</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.241121+0300 INFO link from doc =<a href="/radium/flatfilecms">flatfilecms</a>
+2023-04-14T16:04:24.241334+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.241530+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms">flatfilecms</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms">flatfilecms</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms">flatfilecms</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.243729+0300 INFO link from doc =<a href="/radium/flatfilecms.rss"><i class="ui grey icon tooltip ml-3" data-content="RSS Feed" data-position="top center"><svg aria-hidden="true" class="svg octicon-rss" height="18" viewbox="0 0 16 16" width="18"><path d="M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 1 1-1.497.098 10.502 10.502 0 0 0-9.776-9.776.75.75 0 0 1-.7-.798zM2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm.84-5.95a.75.75 0 0 0-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 1 0 1.49-.178A7.003 7.003 0 0 0 2.838 7.05z" fill-rule="evenodd"></path></svg></i></a>
+2023-04-14T16:04:24.243902+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.244074+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms.rss"><i class="ui grey icon tooltip ml-3" data-content="RSS Feed" data-position="top center"><sv...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms.rss"><i class="ui grey icon tooltip ml-3" data-content="RSS Feed" data-position="top center"><sv...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms.rss"><i class="ui grey icon tooltip ml-3" data-content="RSS Feed" data-position="top center"><sv...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.246137+0300 INFO link from doc =<a class="ui basic label" href="/radium/flatfilecms/watchers">
+								1
+							</a>
+2023-04-14T16:04:24.246280+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.246441+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui basic label" href="/radium/flatfilecms/watchers">
+       │                │                     								1
+       │                │                     							</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui basic label" href="/radium/flatfilecms/watchers">
+         								1
+         							</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui basic label" href="/radium/flatfilecms/watchers">
+              								1
+              							</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.248298+0300 INFO link from doc =<a class="ui basic label" href="/radium/flatfilecms/stars">
+									0
+								</a>
+2023-04-14T16:04:24.248437+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.248595+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui basic label" href="/radium/flatfilecms/stars">
+       │                │                     									0
+       │                │                     								</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui basic label" href="/radium/flatfilecms/stars">
+         									0
+         								</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui basic label" href="/radium/flatfilecms/stars">
+              									0
+              								</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.250356+0300 INFO link from doc =<a class="ui basic label" href="/radium/flatfilecms/forks">
+								0
+							</a>
+2023-04-14T16:04:24.250501+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.250661+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui basic label" href="/radium/flatfilecms/forks">
+       │                │                     								0
+       │                │                     							</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui basic label" href="/radium/flatfilecms/forks">
+         								0
+         							</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui basic label" href="/radium/flatfilecms/forks">
+              								0
+              							</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.252444+0300 INFO link from doc =<a class="active item" href="/radium/flatfilecms">
+<svg aria-hidden="true" class="svg octicon-code" height="16" viewbox="0 0 16 16" width="16"><path d="M4.72 3.22a.75.75 0 0 1 1.06 1.06L2.06 8l3.72 3.72a.75.75 0 1 1-1.06 1.06L.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25zm6.56 0a.75.75 0 1 0-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06l4.25-4.25a.75.75 0 0 0 0-1.06l-4.25-4.25z" fill-rule="evenodd"></path></svg> Code
+				</a>
+2023-04-14T16:04:24.252594+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.252765+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="active item" href="/radium/flatfilecms">
+       │                │                     <svg aria-hidden="true" class="svg octicon-code" height="16" viewbox="0 0 ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="active item" href="/radium/flatfilecms">
+         <svg aria-hidden="true" class="svg octicon-code" height="16" viewbox="0 0 ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="active item" href="/radium/flatfilecms">
+              <svg aria-hidden="true" class="svg octicon-code" height="16" viewbox="0 0 ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.254883+0300 INFO link from doc =<a class="item" href="/radium/flatfilecms/issues">
+<svg aria-hidden="true" class="svg octicon-issue-opened" height="16" viewbox="0 0 16 16" width="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM1.5 8a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0z" fill-rule="evenodd"></path></svg> Issues
+						
+							<span class="ui primary small label">16</span>
+</a>
+2023-04-14T16:04:24.255048+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.255229+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/radium/flatfilecms/issues">
+       │                │                     <svg aria-hidden="true" class="svg octicon-issue-opened" height="16" viewb...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/radium/flatfilecms/issues">
+         <svg aria-hidden="true" class="svg octicon-issue-opened" height="16" viewb...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/radium/flatfilecms/issues">
+              <svg aria-hidden="true" class="svg octicon-issue-opened" height="16" viewb...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.257723+0300 INFO link from doc =<a class="item" href="/radium/flatfilecms/pulls">
+<svg aria-hidden="true" class="svg octicon-git-pull-request" height="16" viewbox="0 0 16 16" width="16"><path d="M7.177 3.073 9.573.677A.25.25 0 0 1 10 .854v4.792a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354zM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zm-2.25.75a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25zM11 2.5h-1V4h1a1 1 0 0 1 1 1v5.628a2.251 2.251 0 1 0 1.5 0V5A2.5 2.5 0 0 0 11 2.5zm1 10.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0zM3.75 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5z" fill-rule="evenodd"></path></svg> Pull Requests
+						
+					</a>
+2023-04-14T16:04:24.257926+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.258109+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/radium/flatfilecms/pulls">
+       │                │                     <svg aria-hidden="true" class="svg octicon-git-pull-request" height="16" vi...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/radium/flatfilecms/pulls">
+         <svg aria-hidden="true" class="svg octicon-git-pull-request" height="16" vi...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/radium/flatfilecms/pulls">
+              <svg aria-hidden="true" class="svg octicon-git-pull-request" height="16" vi...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.260673+0300 INFO link from doc =<a class="item" href="/radium/flatfilecms/releases">
+<svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0 16 16" width="16"><path d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill-rule="evenodd"></path></svg> Releases
+					
+				</a>
+2023-04-14T16:04:24.260864+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.261029+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/radium/flatfilecms/releases">
+       │                │                     <svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/radium/flatfilecms/releases">
+         <svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/radium/flatfilecms/releases">
+              <svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.263276+0300 INFO link from doc =<a class="item" href="/radium/flatfilecms/wiki">
+<svg aria-hidden="true" class="svg octicon-book" height="16" viewbox="0 0 16 16" width="16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75V1.75zm8.755 3a2.25 2.25 0 0 1 2.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574z" fill-rule="evenodd"></path></svg> Wiki
+					</a>
+2023-04-14T16:04:24.263430+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.263591+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/radium/flatfilecms/wiki">
+       │                │                     <svg aria-hidden="true" class="svg octicon-book" height="16" viewbox="0 0 16...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/radium/flatfilecms/wiki">
+         <svg aria-hidden="true" class="svg octicon-book" height="16" viewbox="0 0 16...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/radium/flatfilecms/wiki">
+              <svg aria-hidden="true" class="svg octicon-book" height="16" viewbox="0 0 16...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.265659+0300 INFO link from doc =<a class="item" href="/radium/flatfilecms/activity">
+<svg aria-hidden="true" class="svg octicon-pulse" height="16" viewbox="0 0 16 16" width="16"><path d="M6 2a.75.75 0 0 1 .696.471L10 10.731l1.304-3.26A.75.75 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.75.75 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.75.75 0 0 1 6 2z" fill-rule="evenodd"></path></svg> Activity
+					</a>
+2023-04-14T16:04:24.265801+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.265959+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="/radium/flatfilecms/activity">
+       │                │                     <svg aria-hidden="true" class="svg octicon-pulse" height="16" viewbox="0...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="/radium/flatfilecms/activity">
+         <svg aria-hidden="true" class="svg octicon-pulse" height="16" viewbox="0...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="/radium/flatfilecms/activity">
+              <svg aria-hidden="true" class="svg octicon-pulse" height="16" viewbox="0...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.268073+0300 INFO link from doc =<a href="https://nextjs.org/" rel="noopener noreferrer nofollow" target="_blank">https://nextjs.org/</a>
+2023-04-14T16:04:24.268216+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.268371+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="https://nextjs.org/" rel="noopener noreferrer nofollow" target="_blank">https://nextjs.org/</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="https://nextjs.org/" rel="noopener noreferrer nofollow" target="_blank">https://nextjs.org/</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="https://nextjs.org/" rel="noopener noreferrer nofollow" target="_blank">https://nextjs.org/</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.270082+0300 INFO link from doc =<a class="link" href=""></a>
+2023-04-14T16:04:24.270319+0300 INFO link from doc =<a class="ui" href="/radium/flatfilecms/commits/branch/master"><svg aria-hidden="true" class="svg octicon-history" height="16" viewbox="0 0 16 16" width="16"><path d="M1.643 3.143.427 1.927A.25.25 0 0 0 0 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 0 0 .177-.427L2.715 4.215a6.5 6.5 0 1 1-1.18 4.458.75.75 0 1 0-1.493.154 8.001 8.001 0 1 0 1.6-5.684zM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.75.75 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4z" fill-rule="evenodd"></path></svg> <b>57</b> Commits</a>
+2023-04-14T16:04:24.270450+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.270605+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui" href="/radium/flatfilecms/commits/branch/master"><svg aria-hidden="true" class="svg octicon-history" height="16...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui" href="/radium/flatfilecms/commits/branch/master"><svg aria-hidden="true" class="svg octicon-history" height="16...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui" href="/radium/flatfilecms/commits/branch/master"><svg aria-hidden="true" class="svg octicon-history" height="16...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.272891+0300 INFO link from doc =<a class="ui" href="/radium/flatfilecms/branches"><svg aria-hidden="true" class="svg octicon-git-branch" height="16" viewbox="0 0 16 16" width="16"><path d="M11.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zm-2.25.75a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.492 2.492 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25zM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM3.5 3.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0z" fill-rule="evenodd"></path></svg> <b>1</b> Branch</a>
+2023-04-14T16:04:24.273058+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.273236+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui" href="/radium/flatfilecms/branches"><svg aria-hidden="true" class="svg octicon-git-branch" height="16" viewbox=...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui" href="/radium/flatfilecms/branches"><svg aria-hidden="true" class="svg octicon-git-branch" height="16" viewbox=...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui" href="/radium/flatfilecms/branches"><svg aria-hidden="true" class="svg octicon-git-branch" height="16" viewbox=...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.275690+0300 INFO link from doc =<a class="ui" href="/radium/flatfilecms/tags"><svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0 16 16" width="16"><path d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill-rule="evenodd"></path></svg> <b>0</b> Tags</a>
+2023-04-14T16:04:24.275928+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.276138+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui" href="/radium/flatfilecms/tags"><svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0 16 16"...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui" href="/radium/flatfilecms/tags"><svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0 16 16"...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui" href="/radium/flatfilecms/tags"><svg aria-hidden="true" class="svg octicon-tag" height="16" viewbox="0 0 16 16"...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.278581+0300 INFO link from doc =<a @click="createTag = false; mode = 'branches'; focusSearchField()" class="reference column" href="#">
+<span :class="{black: mode == 'branches'}" class="text">
+<svg aria-hidden="true" class="mr-2 svg octicon-git-branch" height="16" viewbox="0 0 16 16" width="16"><path d="M11.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zm-2.25.75a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.492 2.492 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25zM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM3.5 3.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0z" fill-rule="evenodd"></path></svg>Branches
+								</span>
+</a>
+2023-04-14T16:04:24.278757+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.278969+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a @click="createTag = false; mode = 'branches'; focusSearchField()" class="reference column" href="#">
+       │                │                     <span :class="{black:...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a @click="createTag = false; mode = 'branches'; focusSearchField()" class="reference column" href="#">
+         <span :class="{black:...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a @click="createTag = false; mode = 'branches'; focusSearchField()" class="reference column" href="#">
+              <span :class="{black:...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.281286+0300 INFO link from doc =<a @click="createTag = true; mode = 'tags'; focusSearchField()" class="reference column" href="#">
+<span :class="{black: mode == 'tags'}" class="text">
+<svg aria-hidden="true" class="mr-2 svg octicon-tag" height="16" viewbox="0 0 16 16" width="16"><path d="M2.5 7.775V2.75a.25.25 0 0 1 .25-.25h5.025a.25.25 0 0 1 .177.073l6.25 6.25a.25.25 0 0 1 0 .354l-5.025 5.025a.25.25 0 0 1-.354 0l-6.25-6.25a.25.25 0 0 1-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775zM6 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" fill-rule="evenodd"></path></svg>Tags
+									</span>
+</a>
+2023-04-14T16:04:24.281434+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.281595+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a @click="createTag = true; mode = 'tags'; focusSearchField()" class="reference column" href="#">
+       │                │                     <span :class="{black: mode...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a @click="createTag = true; mode = 'tags'; focusSearchField()" class="reference column" href="#">
+         <span :class="{black: mode...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a @click="createTag = true; mode = 'tags'; focusSearchField()" class="reference column" href="#">
+              <span :class="{black: mode...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.284003+0300 INFO link from doc =<a @click="createNewBranch()" href="#">
+<div v-show="createTag">
+<i class="reference tags icon"></i>
+							Create tag <strong>${ searchTerm }</strong>
+</div>
+<div v-show="!createTag">
+<svg aria-hidden="true" class="svg octicon-git-branch" height="16" viewbox="0 0 16 16" width="16"><path d="M11.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zm-2.25.75a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.492 2.492 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25zM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5zM3.5 3.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0z" fill-rule="evenodd"></path></svg>
+							Create branch <strong>${ searchTerm }</strong>
+</div>
+<div class="text small">
+							
+								from 'master'
+							
+						</div>
+</a>
+2023-04-14T16:04:24.284180+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.284363+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a @click="createNewBranch()" href="#">
+       │                │                     <div v-show="createTag">
+       │                │                     <i class="reference tags icon"></i>
+       │                │                     							Create tag <stron...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a @click="createNewBranch()" href="#">
+         <div v-show="createTag">
+         <i class="reference tags icon"></i>
+         							Create tag <stron...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a @click="createNewBranch()" href="#">
+              <div v-show="createTag">
+              <i class="reference tags icon"></i>
+              							Create tag <stron...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.287122+0300 INFO link from doc =<a class="section" href="/radium/flatfilecms/src/branch/master" title="flatfilecms">flatfilecms</a>
+2023-04-14T16:04:24.287273+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.287443+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="section" href="/radium/flatfilecms/src/branch/master" title="flatfilecms">flatfilecms</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="section" href="/radium/flatfilecms/src/branch/master" title="flatfilecms">flatfilecms</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="section" href="/radium/flatfilecms/src/branch/master" title="flatfilecms">flatfilecms</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.289277+0300 INFO link from doc =<a class="ui button" href="/radium/flatfilecms/commits/branch/master/flatfilecms">
+<svg aria-hidden="true" class="mr-3 svg octicon-history" height="16" viewbox="0 0 16 16" width="16"><path d="M1.643 3.143.427 1.927A.25.25 0 0 0 0 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 0 0 .177-.427L2.715 4.215a6.5 6.5 0 1 1-1.18 4.458.75.75 0 1 0-1.493.154 8.001 8.001 0 1 0 1.6-5.684zM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.75.75 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4z" fill-rule="evenodd"></path></svg>History
+					</a>
+2023-04-14T16:04:24.289453+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.289652+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui button" href="/radium/flatfilecms/commits/branch/master/flatfilecms">
+       │                │                     <svg aria-hidden="true" class="mr-3 svg oc...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui button" href="/radium/flatfilecms/commits/branch/master/flatfilecms">
+         <svg aria-hidden="true" class="mr-3 svg oc...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui button" href="/radium/flatfilecms/commits/branch/master/flatfilecms">
+              <svg aria-hidden="true" class="mr-3 svg oc...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.291792+0300 INFO link from doc =<a href="/toxa"><strong>Касимов</strong></a>
+2023-04-14T16:04:24.292018+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.292224+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/toxa"><strong>Касимов</strong></a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/toxa"><strong>Касимов</strong></a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/toxa"><strong>Касимов</strong></a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.294321+0300 INFO link from doc =<a class="ui sha label" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5" rel="nofollow">
+<span class="shortsha">92db5286fe</span>
+</a>
+2023-04-14T16:04:24.294512+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.294711+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ui sha label" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5" rel="nofollow">
+       │                │                     <span clas...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ui sha label" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5" rel="nofollow">
+         <span clas...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ui sha label" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5" rel="nofollow">
+              <span clas...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.296726+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта макросов</a>
+2023-04-14T16:04:24.296874+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.297026+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.298775+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master">..</a>
+2023-04-14T16:04:24.298924+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.299087+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master">..</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master">..</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master">..</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.300878+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/scripts" title="scripts">
+									
+										scripts
+									
+								</a>
+2023-04-14T16:04:24.301035+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.301207+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/scripts" title="scripts">
+       │                │                     									
+       │                │                     										scripts
+       │                │                     									
+       │                │                     		...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/scripts" title="scripts">
+         									
+         										scripts
+         									
+         		...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/scripts" title="scripts">
+              									
+              										scripts
+              									
+              		...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.303058+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">Добавлен скрипт генерации статического сайта generate-static-site [</a>
+2023-04-14T16:04:24.303212+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.303378+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">Добавлен скрипт генерации ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">Добавлен скрипт генерации ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">Добавлен скрипт генерации ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.305084+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">closes</a>
+2023-04-14T16:04:24.305230+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.305396+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.307255+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506"> </a>
+2023-04-14T16:04:24.307422+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.307585+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.309710+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/36">#36</a>
+2023-04-14T16:04:24.309890+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.310056+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/36">#36</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/36">#36</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/36">#36</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.311939+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">]</a>
+2023-04-14T16:04:24.312096+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.312277+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/6e212f6d0872c387bfa7e7df1d1b19b7c58d7506">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.313983+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/templates" title="templates">
+									
+										templates
+									
+								</a>
+2023-04-14T16:04:24.314165+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.314319+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/templates" title="templates">
+       │                │                     									
+       │                │                     										templates
+       │                │                     						...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/templates" title="templates">
+         									
+         										templates
+         						...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/templates" title="templates">
+              									
+              										templates
+              						...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.316302+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта макросов</a>
+2023-04-14T16:04:24.316449+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.316603+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/92db5286fe368f2dce37d692af789d39f482b2f5">Обновление способа импорта...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.318412+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/views" title="views">
+									
+										views
+									
+								</a>
+2023-04-14T16:04:24.318562+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.318747+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/views" title="views">
+       │                │                     									
+       │                │                     										views
+       │                │                     									
+       │                │                     								...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/views" title="views">
+         									
+         										views
+         									
+         								...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/views" title="views">
+              									
+              										views
+              									
+              								...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.320757+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переменных [</a>
+2023-04-14T16:04:24.320908+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.321051+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.322851+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+2023-04-14T16:04:24.323002+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.323162+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.324939+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+2023-04-14T16:04:24.325117+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.325290+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.327293+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+2023-04-14T16:04:24.327464+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.327631+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.329368+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+2023-04-14T16:04:24.329510+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.329669+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.331357+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/__init__.py" title="__init__.py">__init__.py</a>
+2023-04-14T16:04:24.331497+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.331658+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/__init__.py" title="__init__.py">__init__.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/__init__.py" title="__init__.py">__init__.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/__init__.py" title="__init__.py">__init__.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.333351+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращены в фильтры jinja2 [</a>
+2023-04-14T16:04:24.333523+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.333701+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.335592+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+2023-04-14T16:04:24.335734+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.335890+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.337564+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+2023-04-14T16:04:24.337696+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.337853+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.339553+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+2023-04-14T16:04:24.339684+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.339836+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.341419+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+2023-04-14T16:04:24.341562+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.341723+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.343467+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/events.py" title="events.py">events.py</a>
+2023-04-14T16:04:24.343608+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.343762+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/events.py" title="events.py">events.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/events.py" title="events.py">events.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/events.py" title="events.py">events.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.345367+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращены в фильтры jinja2 [</a>
+2023-04-14T16:04:24.345512+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.345688+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.347331+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+2023-04-14T16:04:24.347460+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.347619+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.349294+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+2023-04-14T16:04:24.349429+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.349588+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.351538+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+2023-04-14T16:04:24.351684+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.351842+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.353528+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+2023-04-14T16:04:24.353664+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.353821+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.355494+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/filters.py" title="filters.py">filters.py</a>
+2023-04-14T16:04:24.355649+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.355804+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/filters.py" title="filters.py">filters.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/filters.py" title="filters.py">filters.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/filters.py" title="filters.py">filters.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.357522+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращены в фильтры jinja2 [</a>
+2023-04-14T16:04:24.357665+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.357814+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">Глобальные функции превращ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.359665+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+2023-04-14T16:04:24.359827+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.359994+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.361788+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+2023-04-14T16:04:24.361948+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.362112+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.363829+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+2023-04-14T16:04:24.363968+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.364127+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/40">#40</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.365800+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+2023-04-14T16:04:24.365936+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.366091+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/b390539eac8034f73cafba1b984736a2364db4a9">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.367809+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/models.py" title="models.py">models.py</a>
+2023-04-14T16:04:24.367949+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.368125+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/models.py" title="models.py">models.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/models.py" title="models.py">models.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/models.py" title="models.py">models.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.369799+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/1c88eb611f3b2124b8105f4532e219284092ea82">Обновление зависимостей и решение проблемы с временной зоной</a>
+2023-04-14T16:04:24.369979+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.370139+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/1c88eb611f3b2124b8105f4532e219284092ea82">Обновление зависимостей и ...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/1c88eb611f3b2124b8105f4532e219284092ea82">Обновление зависимостей и ...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/1c88eb611f3b2124b8105f4532e219284092ea82">Обновление зависимостей и ...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.371847+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/resources.py" title="resources.py">resources.py</a>
+2023-04-14T16:04:24.371986+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.372142+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/resources.py" title="resources.py">resources.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/resources.py" title="resources.py">resources.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/resources.py" title="resources.py">resources.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.373891+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переменных [</a>
+2023-04-14T16:04:24.374037+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.374195+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">Загрузка глобальных переме...
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.375813+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+2023-04-14T16:04:24.375952+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.376132+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">closes</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.378136+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+2023-04-14T16:04:24.378312+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.378503+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0"> </a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.380427+0300 INFO link from doc =<a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+2023-04-14T16:04:24.380580+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.380747+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="ref-issue" href="https://gitea.radium.group/radium/flatfilecms/issues/29">#29</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.382483+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+2023-04-14T16:04:24.382630+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.382804+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/9e5af50a4bb7f921eab58dfc917faba35b28dfc0">]</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.384639+0300 INFO link from doc =<a href="/radium/flatfilecms/src/branch/master/flatfilecms/routes.py" title="routes.py">routes.py</a>
+2023-04-14T16:04:24.384796+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.384962+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/routes.py" title="routes.py">routes.py</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/routes.py" title="routes.py">routes.py</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/radium/flatfilecms/src/branch/master/flatfilecms/routes.py" title="routes.py">routes.py</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.386660+0300 INFO link from doc =<a class="default-link" href="/radium/flatfilecms/commit/d524359250f3301e18b1552fd8c1a41de82eb773">Начальная редакция</a>
+2023-04-14T16:04:24.386815+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.386970+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="default-link" href="/radium/flatfilecms/commit/d524359250f3301e18b1552fd8c1a41de82eb773">Начальная редакция</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="default-link" href="/radium/flatfilecms/commit/d524359250f3301e18b1552fd8c1a41de82eb773">Начальная редакция</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="default-link" href="/radium/flatfilecms/commit/d524359250f3301e18b1552fd8c1a41de82eb773">Начальная редакция</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.388683+0300 INFO link from doc =<a href="/assets/js/licenses.txt">Licenses</a>
+2023-04-14T16:04:24.388843+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.389008+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/assets/js/licenses.txt">Licenses</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/assets/js/licenses.txt">Licenses</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/assets/js/licenses.txt">Licenses</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.390794+0300 INFO link from doc =<a href="/api/swagger">API</a>
+2023-04-14T16:04:24.390936+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.391098+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="/api/swagger">API</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="/api/swagger">API</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="/api/swagger">API</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.392880+0300 INFO link from doc =<a href="https://gitea.io" rel="noopener noreferrer" target="_blank">Website</a>
+2023-04-14T16:04:24.393083+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.393262+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a href="https://gitea.io" rel="noopener noreferrer" target="_blank">Website</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a href="https://gitea.io" rel="noopener noreferrer" target="_blank">Website</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a href="https://gitea.io" rel="noopener noreferrer" target="_blank">Website</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.395225+0300 INFO link from doc =<a class="item" href="https://www.radium-it.ru/policy/">Privacy Policy</a>
+2023-04-14T16:04:24.395395+0300 DEBUG check_download_link START
+2023-04-14T16:04:24.395559+0300 ERROR An error has been caught in function 'get_download_urls', process 'MainProcess' (25246), thread 'MainThread' (139721529765888):
+Traceback (most recent call last):
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 130, in <module>
+    download_repo(URL)
+    │             └ 'https://gitea.radium.group/radium/flatfilecms'
+    └ <function download_repo at 0x7f13730d3eb0>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 25, in download_repo
+    download_urls = get_download_urls(domen_name+link)
+                    │                 │          └ '/radium/flatfilecms/src/branch/master/flatfilecms'
+                    │                 └ 'https://gitea.radium.group'
+                    └ <function get_download_urls at 0x7f1372c67490>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 79, in get_download_urls
+    post = get_download_urls(url=url, status=False)
+           │                     └ 'https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms'
+           └ <function get_download_urls at 0x7f1372c67490>
+
+> File "/home/koldz1n/Documents/Python/radium_test/main.py", line 76, in get_download_urls
+    if link['href'] and check_download_link(link):
+       │                │                   └ <a class="item" href="https://www.radium-it.ru/policy/">Privacy Policy</a>
+       │                └ <function check_download_link at 0x7f1372c67b50>
+       └ <a class="item" href="https://www.radium-it.ru/policy/">Privacy Policy</a>
+
+  File "/home/koldz1n/Documents/Python/radium_test/main.py", line 117, in check_download_link
+    elems = url.split('/')
+            └ <a class="item" href="https://www.radium-it.ru/policy/">Privacy Policy</a>
+
+TypeError: 'NoneType' object is not callable
+2023-04-14T16:04:24.397224+0300 INFO get download urls = 
+2023-04-14T16:04:24.397365+0300 DEBUG no download link
+link=https://gitea.radium.group/radium/flatfilecms/src/branch/master/flatfilecms
+2023-04-14T16:04:24.397571+0300 DEBUG download_repo START
+2023-04-14T16:04:24.397713+0300 DEBUG get_urls START

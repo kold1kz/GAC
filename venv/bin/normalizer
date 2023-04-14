@@ -1,4 +1,4 @@
-#!/home/koldz1n/Documents/Python/radium/venv/bin/python3
+#!/home/koldz1n/Documents/Python/radium_test/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
