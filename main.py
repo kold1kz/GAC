@@ -1,7 +1,9 @@
 """test case for radium"""
 import os
 import urllib
-import asyncio
+# import aiohttp
+# import asyncio
+import time
 import requests
 from bs4 import BeautifulSoup
 from loguru import logger
@@ -44,10 +46,16 @@ def download_repo(url: str) -> bool:
 
     except IndexError:
         logger.error(f'check link: {url}')
+        os.rmdir('../'+folder_name)
         return None
 
     except requests.exceptions.ConnectionError:
         logger.error('Name or service not known')
+        os.rmdir('../'+folder_name)
+        return None
+    except TypeError:
+        logger.error('Type error')
+        os.rmdir('../'+folder_name)
         return None
 
     return True
@@ -184,13 +192,24 @@ def download_file(url: str,) -> bool:
     return True
 
 
-if __name__ == "__main__":
+
+@logger.catch
+def main():
+    """main func"""
     logger.debug('\n\n\n\tstart program\n\n\n')
-    URL = input("input URL: ")
+    # URL = input("input URL: ")
+    URL = 'https://gitea.radium.group/radium/project-configuration'
     try:
+        start = time.time()
         local_foldername = URL.split('/')[-1]
         os.mkdir(local_foldername)
         os.chdir(local_foldername)
         download_repo(URL)
+        end = time.time()
+        print("Total time: {}\n".format(end-start))
     except FileExistsError:
         logger.error('file already created')
+
+
+if __name__ == "__main__":
+    main()
