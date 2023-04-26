@@ -2,7 +2,6 @@
 import os
 import urllib
 import asyncio
-import time
 import aiofiles
 import aiohttp
 import requests
@@ -135,7 +134,7 @@ async def get_download_urls(url: str, status=True) -> str:
             )
             doc = BeautifulSoup(await html.text(), "html.parser")
             links = doc.find_all('a', href=True, download=status,
-                                class_=False, click=False, target=False)
+                                 class_=False, click=False, target=False)
             if links:
                 for link in links:
                     logger.debug(f'link from doc ={link["href"]}')
@@ -196,26 +195,28 @@ async def download_file(url: str,) -> bool:
     except urllib.error.HTTPError:
         logger.error('download_file error')
         return False
+    except TypeError:
+        logger.error('Type Error')
+        return False
     return True
 
 
 @logger.catch
-def main():
+def main() -> bool:
     """main func"""
     logger.debug('\n\n\n\tstart program\n\n\n')
-    #input_url = input("input URL: ")
-    input_url = 'https://gitea.radium.group/radium/project-configuration'
+    input_url = input("input URL: ")
+    # input_url = 'https://gitea.radium.group/radium/project-configuration'
     try:
-        start = time.time()
         local_foldername = input_url.split('/')[-1]
         os.mkdir(local_foldername)
         os.chdir(local_foldername)
         asyncio.run(download_repo(input_url))
-        end = time.time()
-        print(f'Total time: {end-start}\n')
     except FileExistsError:
         logger.error('folder already created')
+        return False
+    return True
 
 
 if __name__ == "__main__":
-    main()
+    os.exit(main())

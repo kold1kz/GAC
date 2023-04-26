@@ -1,17 +1,34 @@
-all: test
+all: 
 	
-test:
-	mkdir tests
-	cd tests
-	pytest --cov-report html --cov=../src test.py && open ./htmlcov/index.html
-	rmdir project-configuration
-	mv .coverage, ./htmlcov tests
+test: clear htmlcov
+	rm -rf ./tests/*
+	pytest -v --cov-report html --cov=. ./src/test.py
+	mv ./.coverage tests
+	mv htmlcov tests
+	
 
+htmlcov:
+	open ./tests/htmlcov/index.html
 
 clear:
-	rmdir tests
-	rmdir htmlcov
-	rmdir .coverage
-	rmdir debug.log
-	rmdir project-configuration
+	rm -rf project-configuration
+	rm -rf ./.coverage
+	rm -rf htmlcov
 
+clear_debug:
+	rm -rf debug.log
+
+clear_test:
+	rm -rf ./tests/*
+	rm -rf ./tests/.coverage
+
+compile_windows: run
+	./venv/Scripts/activate
+	python3 ./src/with_async.py -o gac.exe
+
+compile_linux: run
+	source ./venv/bin/activate
+	python3 ./src/with_async.py -o ./src/gac.exe
+
+run:
+	./src/gac.exe
